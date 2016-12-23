@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C971CECB1E0DA1A90086255F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971CECA1E0DA1A80086255F /* AppDelegate.swift */; };
+		C971CECD1E0DA1A90086255F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971CECC1E0DA1A90086255F /* ViewController.swift */; };
+		C971CED01E0DA1A90086255F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C971CECE1E0DA1A90086255F /* Main.storyboard */; };
+		C971CED21E0DA1A90086255F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C971CED11E0DA1A90086255F /* Assets.xcassets */; };
+		C971CED51E0DA1A90086255F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C971CED31E0DA1A90086255F /* LaunchScreen.storyboard */; };
+		C971CF1A1E0DA2990086255F /* libBraintree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C971CEF91E0DA2770086255F /* libBraintree.a */; };
+		C971CF311E0DA2C70086255F /* Drop-In.strings in Resources */ = {isa = PBXBuildFile; fileRef = C971CF301E0DA2C70086255F /* Drop-In.strings */; };
+		C971CF481E0DA2D50086255F /* UI.strings in Resources */ = {isa = PBXBuildFile; fileRef = C971CF471E0DA2D50086255F /* UI.strings */; };
+		C971CF5F1E0DA2DB0086255F /* Three-D-Secure.strings in Resources */ = {isa = PBXBuildFile; fileRef = C971CF5E1E0DA2DB0086255F /* Three-D-Secure.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C971CEF21E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A76B198B1B79707700452CFA;
+			remoteInfo = Demo;
+		};
+		C971CEF41E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7ABD6531B702FD800A1223C;
+			remoteInfo = IntegrationTests;
+		};
+		C971CEF61E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 16CD2E9C1B4077FB00E68495;
+			remoteInfo = UnitTests;
+		};
+		C971CEF81E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 417404491BB084D3008A5DEA;
+			remoteInfo = Braintree;
+		};
+		C971CEFA1E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D941D881B5D9E8C0016EFB4;
+			remoteInfo = Braintree3DSecure;
+		};
+		C971CEFC1E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7C889741B5EF5DE007A0E9C;
+			remoteInfo = BraintreeApplePay;
+		};
+		C971CEFE1E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7C889901B5F043B007A0E9C;
+			remoteInfo = BraintreeCard;
+		};
+		C971CF001E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DE12F091B59BE0100EA1BCF;
+			remoteInfo = BraintreeCore;
+		};
+		C971CF021E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A76D7C001BB1CAB00000FA6A;
+			remoteInfo = BraintreeDataCollector;
+		};
+		C971CF041E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D941D381B59C76A0016EFB4;
+			remoteInfo = BraintreePayPal;
+		};
+		C971CF061E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A77AA29C1B618C7700217B73;
+			remoteInfo = BraintreeVenmo;
+		};
+		C971CF081E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A77344F71B7A93A10083EC8D;
+			remoteInfo = BraintreeUI;
+		};
+		C971CF0A1E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4164B9AC1C9B658E006AE861;
+			remoteInfo = BraintreeUnionPay;
+		};
+		C971CF0C1E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A50C3B051C19F55C00612D90;
+			remoteInfo = "PayPalDataCollector-StaticLibrary";
+		};
+		C971CF0E1E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7B463051C3D9C2200048423;
+			remoteInfo = PayPalDataCollector;
+		};
+		C971CF101E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A50C3AD51C19F00600612D90;
+			remoteInfo = "PayPalOneTouch-StaticLibrary";
+		};
+		C971CF121E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A50C3B6F1C1A29C500612D90;
+			remoteInfo = PayPalOneTouch;
+		};
+		C971CF141E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7EDE47701CD2C3D00005E22B;
+			remoteInfo = PayPalUtils;
+		};
+		C971CF161E0DA2770086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03F8B2661C23976000FD184B;
+			remoteInfo = UITests;
+		};
+		C971CF181E0DA28D0086255F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 417404481BB084D3008A5DEA;
+			remoteInfo = Braintree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C971CEC71E0DA1A80086255F /* BraintreeStaticIntegrationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraintreeStaticIntegrationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C971CECA1E0DA1A80086255F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C971CECC1E0DA1A90086255F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C971CECF1E0DA1A90086255F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C971CED11E0DA1A90086255F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C971CED41E0DA1A90086255F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C971CED61E0DA1A90086255F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Braintree.xcodeproj; path = braintree_ios/Braintree.xcodeproj; sourceTree = "<group>"; };
+		C971CF1B1E0DA2C70086255F /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = "da.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF1C1E0DA2C70086255F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF1D1E0DA2C70086255F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF1E1E0DA2C70086255F /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = "en_AU.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF1F1E0DA2C70086255F /* en_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_CA; path = "en_CA.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF201E0DA2C70086255F /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = "en_GB.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF211E0DA2C70086255F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = "es.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF221E0DA2C70086255F /* es_ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_ES; path = "es_ES.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF231E0DA2C70086255F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "fr.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF241E0DA2C70086255F /* fr_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_CA; path = "fr_CA.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF251E0DA2C70086255F /* fr_FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_FR; path = "fr_FR.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF261E0DA2C70086255F /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = "he.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF271E0DA2C70086255F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = "it.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF281E0DA2C70086255F /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = "nb.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF291E0DA2C70086255F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = "nl.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF2A1E0DA2C70086255F /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = "pl.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF2B1E0DA2C70086255F /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "pt.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF2C1E0DA2C70086255F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "ru.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF2D1E0DA2C70086255F /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = "sv.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF2E1E0DA2C70086255F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = "tr.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF2F1E0DA2C70086255F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Drop-In.strings"; sourceTree = "<group>"; };
+		C971CF321E0DA2D50086255F /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF331E0DA2D50086255F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF341E0DA2D50086255F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF351E0DA2D50086255F /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = en_AU.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF361E0DA2D50086255F /* en_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_CA; path = en_CA.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF371E0DA2D50086255F /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = en_GB.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF381E0DA2D50086255F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF391E0DA2D50086255F /* es_ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_ES; path = es_ES.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF3A1E0DA2D50086255F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF3B1E0DA2D50086255F /* fr_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_CA; path = fr_CA.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF3C1E0DA2D50086255F /* fr_FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_FR; path = fr_FR.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF3D1E0DA2D50086255F /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF3E1E0DA2D50086255F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF3F1E0DA2D50086255F /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF401E0DA2D50086255F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF411E0DA2D50086255F /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF421E0DA2D50086255F /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF431E0DA2D50086255F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF441E0DA2D50086255F /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF451E0DA2D50086255F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/UI.strings; sourceTree = "<group>"; };
+		C971CF461E0DA2D50086255F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UI.strings"; sourceTree = "<group>"; };
+		C971CF491E0DA2DB0086255F /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = "da.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF4A1E0DA2DB0086255F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF4B1E0DA2DB0086255F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF4C1E0DA2DB0086255F /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = "en_AU.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF4D1E0DA2DB0086255F /* en_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_CA; path = "en_CA.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF4E1E0DA2DB0086255F /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = "en_GB.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF4F1E0DA2DB0086255F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = "es.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF501E0DA2DB0086255F /* es_ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_ES; path = "es_ES.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF511E0DA2DB0086255F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "fr.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF521E0DA2DB0086255F /* fr_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_CA; path = "fr_CA.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF531E0DA2DB0086255F /* fr_FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_FR; path = "fr_FR.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF541E0DA2DB0086255F /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = "he.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF551E0DA2DB0086255F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = "it.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF561E0DA2DB0086255F /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = "nb.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF571E0DA2DB0086255F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = "nl.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF581E0DA2DB0086255F /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = "pl.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF591E0DA2DB0086255F /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "pt.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF5A1E0DA2DB0086255F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "ru.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF5B1E0DA2DB0086255F /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = "sv.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF5C1E0DA2DB0086255F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = "tr.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+		C971CF5D1E0DA2DB0086255F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Three-D-Secure.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C971CEC41E0DA1A80086255F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C971CF1A1E0DA2990086255F /* libBraintree.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C971CEBE1E0DA1A80086255F = {
+			isa = PBXGroup;
+			children = (
+				C971CF5E1E0DA2DB0086255F /* Three-D-Secure.strings */,
+				C971CF471E0DA2D50086255F /* UI.strings */,
+				C971CF301E0DA2C70086255F /* Drop-In.strings */,
+				C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */,
+				C971CEC91E0DA1A80086255F /* BraintreeStaticIntegrationDemo */,
+				C971CEC81E0DA1A80086255F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C971CEC81E0DA1A80086255F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C971CEC71E0DA1A80086255F /* BraintreeStaticIntegrationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C971CEC91E0DA1A80086255F /* BraintreeStaticIntegrationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C971CECA1E0DA1A80086255F /* AppDelegate.swift */,
+				C971CECC1E0DA1A90086255F /* ViewController.swift */,
+				C971CECE1E0DA1A90086255F /* Main.storyboard */,
+				C971CED11E0DA1A90086255F /* Assets.xcassets */,
+				C971CED31E0DA1A90086255F /* LaunchScreen.storyboard */,
+				C971CED61E0DA1A90086255F /* Info.plist */,
+			);
+			path = BraintreeStaticIntegrationDemo;
+			sourceTree = "<group>";
+		};
+		C971CEDD1E0DA2770086255F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C971CEF31E0DA2770086255F /* Demo.app */,
+				C971CEF51E0DA2770086255F /* IntegrationTests.xctest */,
+				C971CEF71E0DA2770086255F /* UnitTests.xctest */,
+				C971CEF91E0DA2770086255F /* libBraintree.a */,
+				C971CEFB1E0DA2770086255F /* Braintree3DSecure.framework */,
+				C971CEFD1E0DA2770086255F /* BraintreeApplePay.framework */,
+				C971CEFF1E0DA2770086255F /* BraintreeCard.framework */,
+				C971CF011E0DA2770086255F /* BraintreeCore.framework */,
+				C971CF031E0DA2770086255F /* BraintreeDataCollector.framework */,
+				C971CF051E0DA2770086255F /* BraintreePayPal.framework */,
+				C971CF071E0DA2770086255F /* BraintreeVenmo.framework */,
+				C971CF091E0DA2770086255F /* BraintreeUI.framework */,
+				C971CF0B1E0DA2770086255F /* BraintreeUnionPay.framework */,
+				C971CF0D1E0DA2770086255F /* libPayPalDataCollector-StaticLibrary.a */,
+				C971CF0F1E0DA2770086255F /* PayPalDataCollector.framework */,
+				C971CF111E0DA2770086255F /* libPayPalOneTouch-StaticLibrary.a */,
+				C971CF131E0DA2770086255F /* PayPalOneTouch.framework */,
+				C971CF151E0DA2770086255F /* PayPalUtils.framework */,
+				C971CF171E0DA2770086255F /* UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C971CEC61E0DA1A80086255F /* BraintreeStaticIntegrationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C971CED91E0DA1A90086255F /* Build configuration list for PBXNativeTarget "BraintreeStaticIntegrationDemo" */;
+			buildPhases = (
+				C971CEC31E0DA1A80086255F /* Sources */,
+				C971CEC41E0DA1A80086255F /* Frameworks */,
+				C971CEC51E0DA1A80086255F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C971CF191E0DA28D0086255F /* PBXTargetDependency */,
+			);
+			name = BraintreeStaticIntegrationDemo;
+			productName = BraintreeStaticIntegrationDemo;
+			productReference = C971CEC71E0DA1A80086255F /* BraintreeStaticIntegrationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C971CEBF1E0DA1A80086255F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Example;
+				TargetAttributes = {
+					C971CEC61E0DA1A80086255F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = C971CEC21E0DA1A80086255F /* Build configuration list for PBXProject "BraintreeStaticIntegrationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C971CEBE1E0DA1A80086255F;
+			productRefGroup = C971CEC81E0DA1A80086255F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C971CEDD1E0DA2770086255F /* Products */;
+					ProjectRef = C971CEDC1E0DA2770086255F /* Braintree.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C971CEC61E0DA1A80086255F /* BraintreeStaticIntegrationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C971CEF31E0DA2770086255F /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = C971CEF21E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CEF51E0DA2770086255F /* IntegrationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IntegrationTests.xctest;
+			remoteRef = C971CEF41E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CEF71E0DA2770086255F /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = C971CEF61E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CEF91E0DA2770086255F /* libBraintree.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBraintree.a;
+			remoteRef = C971CEF81E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CEFB1E0DA2770086255F /* Braintree3DSecure.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Braintree3DSecure.framework;
+			remoteRef = C971CEFA1E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CEFD1E0DA2770086255F /* BraintreeApplePay.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BraintreeApplePay.framework;
+			remoteRef = C971CEFC1E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CEFF1E0DA2770086255F /* BraintreeCard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BraintreeCard.framework;
+			remoteRef = C971CEFE1E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF011E0DA2770086255F /* BraintreeCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BraintreeCore.framework;
+			remoteRef = C971CF001E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF031E0DA2770086255F /* BraintreeDataCollector.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BraintreeDataCollector.framework;
+			remoteRef = C971CF021E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF051E0DA2770086255F /* BraintreePayPal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BraintreePayPal.framework;
+			remoteRef = C971CF041E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF071E0DA2770086255F /* BraintreeVenmo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BraintreeVenmo.framework;
+			remoteRef = C971CF061E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF091E0DA2770086255F /* BraintreeUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BraintreeUI.framework;
+			remoteRef = C971CF081E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF0B1E0DA2770086255F /* BraintreeUnionPay.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BraintreeUnionPay.framework;
+			remoteRef = C971CF0A1E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF0D1E0DA2770086255F /* libPayPalDataCollector-StaticLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPayPalDataCollector-StaticLibrary.a";
+			remoteRef = C971CF0C1E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF0F1E0DA2770086255F /* PayPalDataCollector.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PayPalDataCollector.framework;
+			remoteRef = C971CF0E1E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF111E0DA2770086255F /* libPayPalOneTouch-StaticLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPayPalOneTouch-StaticLibrary.a";
+			remoteRef = C971CF101E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF131E0DA2770086255F /* PayPalOneTouch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PayPalOneTouch.framework;
+			remoteRef = C971CF121E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF151E0DA2770086255F /* PayPalUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PayPalUtils.framework;
+			remoteRef = C971CF141E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C971CF171E0DA2770086255F /* UITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UITests.xctest;
+			remoteRef = C971CF161E0DA2770086255F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C971CEC51E0DA1A80086255F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C971CF5F1E0DA2DB0086255F /* Three-D-Secure.strings in Resources */,
+				C971CF481E0DA2D50086255F /* UI.strings in Resources */,
+				C971CF311E0DA2C70086255F /* Drop-In.strings in Resources */,
+				C971CED51E0DA1A90086255F /* LaunchScreen.storyboard in Resources */,
+				C971CED21E0DA1A90086255F /* Assets.xcassets in Resources */,
+				C971CED01E0DA1A90086255F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C971CEC31E0DA1A80086255F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C971CECD1E0DA1A90086255F /* ViewController.swift in Sources */,
+				C971CECB1E0DA1A90086255F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C971CF191E0DA28D0086255F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Braintree;
+			targetProxy = C971CF181E0DA28D0086255F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C971CECE1E0DA1A90086255F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C971CECF1E0DA1A90086255F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C971CED31E0DA1A90086255F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C971CED41E0DA1A90086255F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C971CF301E0DA2C70086255F /* Drop-In.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C971CF1B1E0DA2C70086255F /* da */,
+				C971CF1C1E0DA2C70086255F /* de */,
+				C971CF1D1E0DA2C70086255F /* en */,
+				C971CF1E1E0DA2C70086255F /* en_AU */,
+				C971CF1F1E0DA2C70086255F /* en_CA */,
+				C971CF201E0DA2C70086255F /* en_GB */,
+				C971CF211E0DA2C70086255F /* es */,
+				C971CF221E0DA2C70086255F /* es_ES */,
+				C971CF231E0DA2C70086255F /* fr */,
+				C971CF241E0DA2C70086255F /* fr_CA */,
+				C971CF251E0DA2C70086255F /* fr_FR */,
+				C971CF261E0DA2C70086255F /* he */,
+				C971CF271E0DA2C70086255F /* it */,
+				C971CF281E0DA2C70086255F /* nb */,
+				C971CF291E0DA2C70086255F /* nl */,
+				C971CF2A1E0DA2C70086255F /* pl */,
+				C971CF2B1E0DA2C70086255F /* pt */,
+				C971CF2C1E0DA2C70086255F /* ru */,
+				C971CF2D1E0DA2C70086255F /* sv */,
+				C971CF2E1E0DA2C70086255F /* tr */,
+				C971CF2F1E0DA2C70086255F /* zh-Hans */,
+			);
+			name = "Drop-In.strings";
+			path = "braintree_ios/BraintreeUI/Drop-In/Localization/.";
+			sourceTree = "<group>";
+		};
+		C971CF471E0DA2D50086255F /* UI.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C971CF321E0DA2D50086255F /* da */,
+				C971CF331E0DA2D50086255F /* de */,
+				C971CF341E0DA2D50086255F /* en */,
+				C971CF351E0DA2D50086255F /* en_AU */,
+				C971CF361E0DA2D50086255F /* en_CA */,
+				C971CF371E0DA2D50086255F /* en_GB */,
+				C971CF381E0DA2D50086255F /* es */,
+				C971CF391E0DA2D50086255F /* es_ES */,
+				C971CF3A1E0DA2D50086255F /* fr */,
+				C971CF3B1E0DA2D50086255F /* fr_CA */,
+				C971CF3C1E0DA2D50086255F /* fr_FR */,
+				C971CF3D1E0DA2D50086255F /* he */,
+				C971CF3E1E0DA2D50086255F /* it */,
+				C971CF3F1E0DA2D50086255F /* nb */,
+				C971CF401E0DA2D50086255F /* nl */,
+				C971CF411E0DA2D50086255F /* pl */,
+				C971CF421E0DA2D50086255F /* pt */,
+				C971CF431E0DA2D50086255F /* ru */,
+				C971CF441E0DA2D50086255F /* sv */,
+				C971CF451E0DA2D50086255F /* tr */,
+				C971CF461E0DA2D50086255F /* zh-Hans */,
+			);
+			name = UI.strings;
+			path = braintree_ios/BraintreeUI/Localization/.;
+			sourceTree = "<group>";
+		};
+		C971CF5E1E0DA2DB0086255F /* Three-D-Secure.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C971CF491E0DA2DB0086255F /* da */,
+				C971CF4A1E0DA2DB0086255F /* de */,
+				C971CF4B1E0DA2DB0086255F /* en */,
+				C971CF4C1E0DA2DB0086255F /* en_AU */,
+				C971CF4D1E0DA2DB0086255F /* en_CA */,
+				C971CF4E1E0DA2DB0086255F /* en_GB */,
+				C971CF4F1E0DA2DB0086255F /* es */,
+				C971CF501E0DA2DB0086255F /* es_ES */,
+				C971CF511E0DA2DB0086255F /* fr */,
+				C971CF521E0DA2DB0086255F /* fr_CA */,
+				C971CF531E0DA2DB0086255F /* fr_FR */,
+				C971CF541E0DA2DB0086255F /* he */,
+				C971CF551E0DA2DB0086255F /* it */,
+				C971CF561E0DA2DB0086255F /* nb */,
+				C971CF571E0DA2DB0086255F /* nl */,
+				C971CF581E0DA2DB0086255F /* pl */,
+				C971CF591E0DA2DB0086255F /* pt */,
+				C971CF5A1E0DA2DB0086255F /* ru */,
+				C971CF5B1E0DA2DB0086255F /* sv */,
+				C971CF5C1E0DA2DB0086255F /* tr */,
+				C971CF5D1E0DA2DB0086255F /* zh-Hans */,
+			);
+			name = "Three-D-Secure.strings";
+			path = braintree_ios/Braintree3DSecure/Localization/.;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C971CED71E0DA1A90086255F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C971CED81E0DA1A90086255F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C971CEDA1E0DA1A90086255F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/braintree_ios/**";
+				INFOPLIST_FILE = BraintreeStaticIntegrationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BraintreeStaticIntegrationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C971CEDB1E0DA1A90086255F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/braintree_ios/**";
+				INFOPLIST_FILE = BraintreeStaticIntegrationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BraintreeStaticIntegrationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C971CEC21E0DA1A80086255F /* Build configuration list for PBXProject "BraintreeStaticIntegrationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C971CED71E0DA1A90086255F /* Debug */,
+				C971CED81E0DA1A90086255F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C971CED91E0DA1A90086255F /* Build configuration list for PBXNativeTarget "BraintreeStaticIntegrationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C971CEDA1E0DA1A90086255F /* Debug */,
+				C971CEDB1E0DA1A90086255F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C971CEBF1E0DA1A80086255F /* Project object */;
+}
